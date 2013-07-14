@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/create_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/back_style"
+            android:paddingLeft="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <Button
+            android:id="@+id/create_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/top_button_style"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/create_upload"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/create_save" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:text="@string/create_save" -->
+        <!-- android:textSize="@dimen/text_normal_size" /> -->
+
+        <Button
+            android:id="@+id/create_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/top_button_style"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/create_new"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/local_up_titlebg"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="15.0dip"
+            android:text="@string/create_localdata"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/list_bg"
+         android:layout_margin="10.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_top_bg"
+            android:orientation="vertical" >
+
+            <include
+                android:layout_gravity="left"
+                layout="@layout/list_project_item" />
+
+            <TextView
+                android:id="@+id/create_localtext"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:text="@string/local_none"
+                android:textColor="@color/list_gray" />
+            <ImageView 
+			    android:layout_height="wrap_content"
+			    android:layout_width="fill_parent"
+			    android:background="@drawable/list_divider"
+			    />
+            <ListView
+                android:id="@+id/create_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="fill_horizontal"
+                android:cacheColorHint="#000000"
+                android:divider="@drawable/list_divider"
+                android:fadingEdge="none" />
+        </LinearLayout>
+    </LinearLayout>
+     
+<!--     <LinearLayout -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:background="@drawable/list_bg" -->
+<!--         android:padding="10.0dip" > -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/create_localtext" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:gravity="center" -->
+<!--             android:text="@string/create_localnone" -->
+<!--             android:visibility="gone" /> -->
+
+<!--         <include layout="@layout/list_project_item" /> -->
+
+<!--         <ListView -->
+<!--             android:id="@+id/create_list" -->
+<!--             android:layout_width="fill_parent" -->
+<!--             android:layout_height="fill_parent" -->
+<!--             android:divider="@drawable/list_divider" -->
+<!--             /> -->
+<!--     </LinearLayout> -->
+
+</LinearLayout>

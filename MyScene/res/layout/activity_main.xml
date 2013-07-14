@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    android:paddingLeft="35.0dip"
+    android:paddingRight="35.0dip"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/pro_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_button_style"
+        android:padding="15.0dip"
+        android:text="@string/pro_create"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:textColor="#0079b6"
+        android:shadowColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pro_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pro_create"
+        android:background="@drawable/main_button_style"
+        android:padding="15.0dip"
+        android:text="@string/pro_search"
+        android:textColor="#0079b6"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pro_localdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0079b6"
+        android:layout_below="@id/pro_search"
+        android:background="@drawable/main_button_style"
+        android:padding="15.0dip"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowColor="@android:color/white"
+        android:text="@string/pro_localdata"
+        android:textSize="20sp" />
+
+</RelativeLayout>

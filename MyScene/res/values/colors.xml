@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="search_hint">#909090</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000FF</color>
+    <color name="red">#ddFF0000</color>
+    <color name="bule">#1E90FF</color>
+    <color name="list_gray">#878787</color>
+    <color name="gray">#878787</color>
+    <color name="dark_blue">#006DAC</color>
+    <color name="light_blue">#FFFFFF</color>
+    <color name="dark_gray">#595959</color>
+</resources>

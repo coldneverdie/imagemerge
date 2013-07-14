@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="15.0dip"
+        android:background="@drawable/list_bg"
+        android:orientation="vertical"
+        android:paddingBottom="15.0dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/pro_id"
+                android:textColor="#006DAC"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/project_id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_background"
+                android:hint="@string/pro_id_hint"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dip" >
+
+            <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="@string/pro_name"
+                android:textColor="#006DAC"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/project_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_background"
+                android:hint="@string/pro_name_hint"
+                android:singleLine="true"
+                android:textColor="@color/dark_gray"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/pro_back"
+                android:layout_width="fill_parent"
+                android:layout_height="52.5dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="-1.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/project_button_style"
+                android:gravity="center"
+                android:paddingTop="-1.0dip"
+                android:shadowColor="@android:color/white"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2.0"
+                android:text="@string/button_back"
+                android:textColor="#3394C5"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/pro_search"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_weight="1"
+                android:background="@drawable/project_search_style"
+                android:gravity="center"
+                android:shadowColor="#0078af"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="2.0"
+                android:text="@string/search"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

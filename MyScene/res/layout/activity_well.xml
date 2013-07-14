@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center"
+        android:background="@drawable/top_bar"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/well_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/back_style"
+            android:paddingLeft="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/local_up_titlebg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dip"
+        android:text="@string/well_create"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_normal_size" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/create_baseinfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_style"
+            android:padding="15.0dip"
+            android:shadowColor="@android:color/white"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text="@string/create_baseinfo"
+            android:textColor="#0079B6"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/create_digwell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_baseinfo"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_style"
+            android:padding="15.0dip"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text="@string/create_digwell"
+            android:textColor="#0079B6"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/create_washwell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_digwell"
+            android:layout_weight="1"
+            android:background="@drawable/main_button_style"
+            android:padding="15.0dip"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:text="@string/create_washwell"
+            android:textColor="#0079B6"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>

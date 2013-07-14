@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:background="@drawable/bg"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pid_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/back_style"
+            android:gravity="center"
+            android:paddingLeft="13.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <Button
+            android:id="@+id/pid_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/top_button_style"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/local_up_titlebg"
+        android:padding="5.0dip"
+        android:text="@string/pid_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_normal_size" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_margin="10.0dip"
+        android:background="@drawable/list_bg"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:padding="15.0dip">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/pid_depth" />
+
+                <EditText
+                    android:id="@+id/pid_depth"
+                    style="@style/base_edit_style"
+                    android:inputType="none"
+                     android:layout_weight="0.66"
+                    android:layout_marginRight="5.0dip" />
+                <TextView
+                    style="@style/mi_style"
+                    android:text="@string/mi"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:padding="15.0dip">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/pid_value" />
+
+                <EditText
+                    android:id="@+id/pid_value"
+                    style="@style/base_edit_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:padding="15.0dip">
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/pid_memo" />
+
+                <EditText
+                    android:id="@+id/pid_memo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_background"
+                    android:gravity="top"
+                    android:minHeight="100.0dip"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:padding="15.0dip"
+                android:paddingTop="-10.0dip"
+                >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/pid_extra" />
+
+                <EditText
+                    android:id="@+id/pid_extra"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_background"
+                    android:gravity="top"
+                    android:minHeight="100.0dip"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

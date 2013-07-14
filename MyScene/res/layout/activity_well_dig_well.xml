@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/top_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dirt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/back_style"
+            android:paddingLeft="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <!-- <Button -->
+        <!-- android:id="@+id/dirt_save" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_gravity="center" -->
+        <!-- android:text="@string/create_save" -->
+        <!-- android:textSize="@dimen/text_normal_size" /> -->
+
+        <Button
+            android:id="@+id/new_dirt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/top_button_style"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/new_dirt"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <Button
+            android:id="@+id/new_pid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/top_button_style"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/new_pid"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="left"
+        android:background="@drawable/local_up_titlebg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dip"
+        android:text="@string/dig_well_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_normal_size" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="10.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/list_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="土层"
+                android:textColor="#1C9EDF"
+                android:textSize="@dimen/text_normal_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dirt_text_none"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/dirt_text_none"
+                    android:textColor="@android:color/black" />
+
+                <include
+                    android:layout_gravity="left"
+                    layout="@layout/list_dirt_item" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_divider" />
+
+                <ListView
+                    android:id="@+id/dirt_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="fill_horizontal"
+                    android:divider="@drawable/list_divider" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="-5.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/list_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_gravity="left"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dip"
+                android:text="PID读数"
+                android:textColor="#1C9EDF"
+                android:textSize="@dimen/text_normal_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+
+            <TextView
+                android:id="@+id/pid_text_none"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/pid_text_none"
+                android:textColor="@android:color/black" />
+
+            <include
+                android:layout_gravity="left"
+                layout="@layout/list_pid_item" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+
+            <ListView
+                android:id="@+id/pid_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="fill_horizontal"
+                android:divider="@drawable/list_divider" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

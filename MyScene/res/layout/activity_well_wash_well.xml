@@ -1,0 +1,292 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wash_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="8.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/back_style"
+            android:gravity="center"
+            android:paddingLeft="13.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/button_back"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+
+        <Button
+            android:id="@+id/wash_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:background="@drawable/top_button_style"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:shadowColor="#0078af"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2.0"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_normal_size" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_gravity="left"
+        android:background="@drawable/local_up_titlebg"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="15dip"
+        android:text="@string/well_create"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_normal_size" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/list_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/pro_id" />
+
+                <EditText
+                    android:id="@+id/project_id"
+                    style="@style/base_edit_style"
+                    android:editable="false"
+                    android:hint="@string/pro_id_hint"
+                    android:inputType="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/base_wellnum" />
+
+                <EditText
+                    android:id="@+id/well_num"
+                    style="@style/base_edit_style"
+                    android:editable="false"
+                    android:text="@string/add_well_first" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_date" />
+
+                <EditText
+                    android:id="@+id/wash_date"
+                    style="@style/base_edit_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_time" />
+
+                <EditText
+                    android:id="@+id/wash_time"
+                    style="@style/base_edit_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/base_weather" />
+
+                <EditText
+                    android:id="@+id/wash_weather"
+                    style="@style/base_edit_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_method" />
+
+                <EditText
+                    android:id="@+id/wash_method"
+                    style="@style/base_edit_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_temp" />
+
+                <EditText
+                    android:id="@+id/wash_temp"
+                    style="@style/base_edit_style"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="0.66" />
+
+                <TextView
+                    style="@style/mi_style"
+                    android:text="@string/temp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_cond" />
+
+                <EditText
+                    android:id="@+id/wash_cond"
+                    style="@style/base_edit_style"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="0.66" />
+
+                <TextView
+                    style="@style/mi_style"
+                    android:text="@string/cond" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_ph" />
+
+                <EditText
+                    android:id="@+id/wash_ph"
+                    style="@style/base_edit_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_water" />
+
+                <EditText
+                    android:id="@+id/wash_water"
+                    style="@style/base_edit_style"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="0.66" />
+
+                <TextView
+                    style="@style/mi_style"
+                    android:text="@string/mi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15.0dip" >
+
+                <TextView
+                    style="@style/text_style"
+                    android:text="@string/wash_gaocheng" />
+
+                <EditText
+                    android:id="@+id/wash_gaocheng"
+                    style="@style/base_edit_style"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="0.66" />
+
+                <TextView
+                    style="@style/mi_style"
+                    android:text="@string/mi" />
+            </LinearLayout>
+
+            <!-- <LinearLayout -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:orientation="horizontal" > -->
+
+
+            <!-- <TextView -->
+            <!-- style="@style/text_style" -->
+            <!-- android:text="@string/wash_createtime" /> -->
+
+
+            <!-- <EditText -->
+            <!-- android:id="@+id/wash_createtime" -->
+            <!-- style="@style/base_edit_style" /> -->
+            <!-- </LinearLayout> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
