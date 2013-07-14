@@ -10,7 +10,6 @@ public class BaseAutoCompeleteAdapter extends SimpleCursorAdapter {
 	DBHelper dbHelper;
 	Context context;
 	private String from;
-
 	@SuppressWarnings("deprecation")
 	public BaseAutoCompeleteAdapter(Context context, int layout, Cursor c,
 			String from, int[] to) {
@@ -19,8 +18,6 @@ public class BaseAutoCompeleteAdapter extends SimpleCursorAdapter {
 		this.context = context;
 		this.from = from;
 	}
-
-	
 	@SuppressWarnings("deprecation")
 	public BaseAutoCompeleteAdapter(Context context, int layout, Cursor c,String from, int to) {
 	       super(context, layout, c, new String[] { from },new int[] { to });
